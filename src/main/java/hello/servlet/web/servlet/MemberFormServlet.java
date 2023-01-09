@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-// 발전역사 : servlet(java 코드 안의 html..가독성 구림) ---> jsp(html 안의 java 코드..여전히 불편) -------> mvc pattern (servlet을 controller로, jsp를 view로서만 이용)-----------> Spring MVC (최종)
+// 발전역사 : servlet(java 코드 안의 html..가독성 구림) ---> jsp(html 안의 java 코드..여전히 불편) -------> mvc pattern 흉내(servlet을 controller로, jsp를 view로서만 이용)
+// -----------> Spring MVC (최종) :frontcontroller=(DispatcherServlet)가 포함된!
 // 같은 역할의 class가 순서에 따라서 어떤 식으로 바뀌었는지 보면 좋을 듯.
 @WebServlet(name="memberFormServlet",urlPatterns = "/servlet/members/new-form")
 public class MemberFormServlet extends HttpServlet {
