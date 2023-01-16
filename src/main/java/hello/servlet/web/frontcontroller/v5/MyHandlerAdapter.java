@@ -14,5 +14,6 @@ public interface MyHandlerAdapter {
     // supports()= 파라미터로 넘어온 controller를 처리할 adapter가 있는지 검사하는 메서드
     boolean supports(Object handler);
 
-    ModelView handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
+    ModelView handle(HttpServletRequest request, HttpServletResponse response,Object handler) throws ServletException, IOException;
+
 }
