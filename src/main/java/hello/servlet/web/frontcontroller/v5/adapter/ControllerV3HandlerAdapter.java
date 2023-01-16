@@ -11,6 +11,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+// adapter -> 실제 controller를 호출하여 값을 받아온다고 생각~
+// 실제 컨트롤러를 호출하기 전에 이 컨트롤러를 지원하는 어댑터인지 먼저 확인(supports()로)
+// 컨트롤러에서 값을 받아와서 구현한 부모 어댑터의 return 타입에 맞게 adapting 작업도 해줌~ (ControllerV4HandlerAdapter 확인)
 public class ControllerV3HandlerAdapter implements MyHandlerAdapter {
     // ControllerV3만 지원하는 Adapter인지 확인하기
     @Override
