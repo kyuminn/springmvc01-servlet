@@ -36,6 +36,7 @@ public class SpringMemberControllerV3 {
         return "members";
     }
 
+    // @RequestParam = GET 쿼리 파라미터, POST 폼 파라미터 두 방식 모두 지원
     @PostMapping(value = "/save")
     public String save(@RequestParam("username")String username, @RequestParam("age")int age, Model model){
 
